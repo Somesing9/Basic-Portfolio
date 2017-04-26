@@ -1,0 +1,205 @@
+/*------------
+	General
+--------------*/
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #777;
+	background: url(../images/background.png);
+	background-repeat: repeat;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+	color: #4aaaa5;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+}	
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*----------------
+	HEADER
+-----------------*/
+
+header {
+	background-color: #fff;
+	border-bottom: 2px solid #ccc;
+	width: 100%;
+}
+
+.inner-header {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.inner-header h1 {
+	float: left;
+	background-color: #4aaaa5;
+	color: #fff;
+	font-size: 36px;
+	padding: 20px 35px;
+}
+
+nav {
+	padding-top: 35px;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	/*display: inline-block;*/
+	float: left;
+	border-right: 1px solid black;
+	padding: 0 20px;
+}
+
+nav ul li:last-child { 
+	border-right: 0;
+	padding-right: 0px;
+}
+
+/*---------------
+ MAIN CONTENT
+----------------*/
+
+.container {
+	width: 960px;
+	margin: 30px auto -65px auto;
+	min-height: 100%;
+}
+
+.container:after {
+	content: "";
+	display: block;
+	height: 65px;
+}
+
+.main-content {
+	width: 610px;
+	float: left;
+	background-color: #fff;
+	padding: 20px 20px;
+	border: 1px solid #ddd;
+}
+
+.section-title {
+	font-size: 28px;
+}
+
+.sidebar {
+	width: 230px;
+	float: right;
+	background-color: #fff;
+	padding: 20px 20px;
+	border: 1px solid #ddd;
+}
+
+.sidebar h4 {
+	font-size: 20px;
+	text-align: center;
+}
+.sidebar ul {
+	text-align: center;
+}
+
+.sidebar ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.socialmedia-icon {
+	height: 50px;
+	width: 50px;
+}
+
+.profile-picture {
+	float: left;
+	margin-right: 10px;
+	width: 300px;
+}
+
+/*---------------
+	FOOTER
+---------------*/
+footer {
+	background-color: #666;
+	border-top: 7px solid #4aaaa5;
+	width: 100%;
+	height: 65px;
+}
+
+.inner-footer {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.copyright {
+	font-size: 12px;
+	color: #fff;
+}
+
+/*----------------------
+	CONTACT PAGE
+------------------------*/
+#contact-form label {
+	display: block;
+}
+
+.contact-field {
+	width: 600px;
+	padding: 5px;
+}
+
+#submit-button {
+	background-color: #4aaaa5;
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	width: 110px;
+	border: none;
+}
+
+/*----------------------
+	PORTFOLIO PAGE
+------------------------*/
+.project-thumbnail {
+	width: 275px;
+	position: relative;
+	float: left;
+	margin: 20px 0;
+}
+
+.project-thumbnail:nth-child(odd) {
+	margin-right: 60px;
+}
+
+.project-title {
+	background-color: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	width: 255px;
+	padding: 10px;
+	position: absolute;
+	bottom: 20px;
+
+}
+
+.thumbnail-title {
+	background-color: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	height: 60px;
+}

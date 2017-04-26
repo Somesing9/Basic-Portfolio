@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header class="clearfix">
+		<div class="inner-header">
+			<h1>Dan Meyer</h1>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container clearfix">
+		<section class="main-content">
+			<h2 class="section-title">Contact</h2>
+			<hr />
+			<form id="contact-form" action="" method="post">
+				<fieldset>
+					<label for="name">Name:</label>
+					<input class="contact-field" type="text" id="name" name="name" placeholder="John Smith" required="required">
+				</fieldset>
+				<fieldset>
+					<label for="email">Email:</label>
+					<input class="contact-field" type="email" name="email" placeholder="example@gmail.com" required="required">
+				</fieldset>
+				<fieldset>
+					<label for="message">Message:</label>
+					<textarea class="contact-field" id="message" name="message" rows="10" cols="40" required="required"></textarea>
+					<!-- <input type="text" name="message" required="required"> -->
+				</fieldset>
+				<input type="submit" value="Submit" id="submit-button" />
+
+			</form>
+		</section>
+		<aside class="sidebar">
+			<h4>Connect with Me</h4>
+			<hr />
+			<ul>
+				<li>
+					<a href="https://github.com/Somesing9" target="_blank"><img class="socialmedia-icon" src="assets/images/github-icon.png" alt="Github Icon" /></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/daniel-meyer-78353269" target="_blank"><img class="socialmedia-icon" src="assets/images/linkedin-icon.png" alt="LinkedIn Icon" /></a>
+				</li>
+				<li>
+					<a href="http://stackoverflow.com/users/7834347/somesing9" target="_blank"><img class="socialmedia-icon" src="assets/images/stackoverflow-icon.png" alt="Stackoverflow Icon" /></a>
+				</li>
+			</ul>
+		</aside>
+	</div>
+	<footer>
+		<div class="inner-footer">
+			<p class="copyright">&copy; 2017 by Dan Meyer</p>
+		</div>
+	</footer>
+</body>
+</html>
