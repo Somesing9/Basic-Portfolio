@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header class="clearfix">
@@ -11,9 +11,15 @@
 			<h1>Dan Meyer</h1>
 			<nav class="main-nav">
 				<ul>
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li>
+						<a href="index.html">About</a>
+					</li>
+					<li>
+						<a href="portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -21,37 +27,32 @@
 	<div class="container clearfix">
 		<section class="main-content">
 			<h2 class="section-title">Contact</h2>
-			<hr />
-			<form id="contact-form" action="" method="post">
+			<hr>
+			<form id="contact-form" method="post" name="contact-form">
 				<fieldset>
-					<label for="name">Name:</label>
-					<input class="contact-field" type="text" id="name" name="name" placeholder="John Smith" required="required">
+					<label for="name">Name:</label> <input class="contact-field" id="name" name="name" placeholder="John Smith" required="required" type="text">
 				</fieldset>
 				<fieldset>
-					<label for="email">Email:</label>
-					<input class="contact-field" type="email" name="email" placeholder="example@gmail.com" required="required">
+					<label for="email">Email:</label> <input class="contact-field" id="email" name="email" placeholder="example@gmail.com" required="required" type="email">
 				</fieldset>
 				<fieldset>
-					<label for="message">Message:</label>
-					<textarea class="contact-field" id="message" name="message" rows="10" cols="40" required="required"></textarea>
-					<!-- <input type="text" name="message" required="required"> -->
-				</fieldset>
-				<input type="submit" value="Submit" id="submit-button" />
-
+					<label for="message">Message:</label> 
+					<textarea class="contact-field" cols="40" id="message" name="message" required="required" rows="10"></textarea> <!-- <input type="text" name="message" required="required"> -->
+				</fieldset><input id="submit-button" type="submit" value="Submit">
 			</form>
 		</section>
 		<aside class="sidebar">
 			<h4>Connect with Me</h4>
-			<hr />
+			<hr>
 			<ul>
 				<li>
-					<a href="https://github.com/Somesing9" target="_blank"><img class="socialmedia-icon" src="assets/images/github-icon.png" alt="Github Icon" /></a>
+					<a href="https://github.com/Somesing9" target="_blank"><img alt="Github Icon" class="socialmedia-icon" src="assets/images/github-icon.png"></a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/daniel-meyer-78353269" target="_blank"><img class="socialmedia-icon" src="assets/images/linkedin-icon.png" alt="LinkedIn Icon" /></a>
+					<a href="https://www.linkedin.com/in/daniel-meyer-78353269" target="_blank"><img alt="LinkedIn Icon" class="socialmedia-icon" src="assets/images/linkedin-icon.png"></a>
 				</li>
 				<li>
-					<a href="http://stackoverflow.com/users/7834347/somesing9" target="_blank"><img class="socialmedia-icon" src="assets/images/stackoverflow-icon.png" alt="Stackoverflow Icon" /></a>
+					<a href="http://stackoverflow.com/users/7834347/somesing9" target="_blank"><img alt="Stackoverflow Icon" class="socialmedia-icon" src="assets/images/stackoverflow-icon.png"></a>
 				</li>
 			</ul>
 		</aside>
